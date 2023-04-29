@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <script type="text/javascript">  
+        function msg1()
+        {  
+         alert("Hello! I am an alert box!!");  
+        }  
+
+        function msg2()
+        {  
+           var v= confirm("Are u sure?");  
+           if(v==true)
+           {  
+           alert("ok");  
+           }  
+           else
+           {  
+              alert("cancel");  
+           }     
+        }  
+        function msg3()
+        {  
+            var v= prompt("Who are you?");  
+            alert("I am "+v);  
+        }
+        function openWin1()
+        {  
+           open("http://www.javatpoint.com");  
+        }  
+
+        function openWin2() 
+        {
+           let myWindow;
+           myWindow = window.open("https://www.geeksforgeeks.org/", "_blank", "width=400, height=200");
+        //    myWindow = window.open("", "myWindow", "width=200, height=100");
+        //    myWindow.document.write("<p>It is my 'newWindow'</p>");
+        }
+
+        function closeWin() 
+        {
+           let myWindow;
+           myWindow.close();
+        }
+        function display() 
+        {
+         window.print();
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <h3 style="color:brown">  Window Object Example </h3> 
+
+    <p>It displays an alert box with a message and an OK button</p>
+    <input type="button" value="click" onclick="msg1()"/>
+
+    <p>It displays a dialog box with a message and an OK and a Cancel button</p>
+    <input type="button" value="delete record" onclick="msg2()"/>
+
+    <p>It displays a dialog box that prompts the visitor for input</p>
+    <input type="button" value="click" onclick="msg3()"/>
+
+    <p>It opens in a new tab</p>
+    <input type="button" value="new" onclick="openWin1()"/> 
+
+    <p>It opens a new browser window</p>
+    <input type="button" value="neww" onclick="openWin2()"/> 
+
+    <p>It closes the current window</p>
+    <input type="button" value="Close" onclick="closeWin()"/> 
+    
+    <p>This is the print content.</p>
+   <button onclick="display()">Click to Print</button>
+
+</body>
+     
+</html>
