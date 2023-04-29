@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" value=" " id="demo">
+        <input type="button" value="factorial" onclick="factorial()">
+        <script>
+            function factorial()
+            {
+                var x=document.getElementById("demo").value;
+                var y=1;
+                var fact=1;
+                while(y<=x)
+                {
+                    fact=fact*y;
+                    y++;
+                }
+                document.write(fact);
+
+            }
+        </script>
+
+    </body>
+
+</html>
