@@ -1,0 +1,34 @@
+<html>
+<head>
+    <script>
+        function myFunction(e)
+        {
+            x=e.clientX;
+            y=e.clientY;
+            coor = "Coordinates: ("+x+","+y+")";
+            document.getElementById("demo").innerHTML = coor
+        }
+
+        function clearCoor()
+        {
+            document.getElementById("demo").innerHTML="";
+        }
+        function myFun1()
+        {
+            alert("you have pressed 1");
+        }
+    </script>
+</head>
+
+<body style="margin:0px;">
+<img src="keypad.jpg" alt="keypad" usemap="#keypad" onmousemove="myFunction(event)" onmouseout="clearCoor()" width="30%" height="60%">
+
+<map name="keypad">
+    <area shape="circle" coords="80,87, 28" alt="1" onclick="myFun1()" onmousemove="myFunction(event)" onmouseout="clearCoor()">
+<!-- 80,87   from centre of 1 ...... 108,87   from boundary of 1   so ordinate of 1 bocomes 80,87,28  here 28 is the radius-->
+
+</map>
+
+<p id="demo"></p>
+</body>
+</html>
