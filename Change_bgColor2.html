@@ -1,0 +1,28 @@
+<!-- Change the element's background color on click -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Change the element's background color</title>
+  </head>
+
+  <body>
+    <div id="box">Some text here</div>
+    <button id="btn">Button</button>
+
+    <script>
+
+
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function onClick(event) 
+        {
+          event.target.style.backgroundColor = 'salmon';   //  change background color
+          event.target.style.color = 'white';       //  optionally change text color
+        });
+
+
+
+    </script>
+  </body>
+</html>
+
