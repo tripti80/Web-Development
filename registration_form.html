@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration Form </title>
+        <style>
+            body{
+                background-color: beige;
+
+            }
+            form{
+                color:black;
+                font-size: larger;
+            }
+            h1{
+                text-align: center;
+            }
+            td{
+                width: 200px;
+                height: 40px;
+            }
+            .list
+            {
+            /* background-color: beige; */
+            font-size: 20px;
+            text-align: center;
+            padding-left: 30%;
+           
+           }
+        </style>
+    </head>
+    <body>
+        <h1> Registration Form </h1>
+      <div class="list">
+        <form action="Script URL" method="get">
+            <table>
+                
+                <tr>
+                    <td> Username</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone no</td>
+                    <td><input type="number" name="number"></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td><input list="Location" name="Location"></td>
+                    <td><datalist id="Location">
+                        <option value="Uttarakhand" selected>Uttarakhand</option>
+                        <option value="Uttar Pradesh" selected>Uttar Pradesh</option>
+                        <option value="Delhi" selected>Delhi</option>
+                        <option value="Andhra Pradesh" selected>Andhra Pradesh</option>
+                        <option value="Tamil Nadu" selected>Tamil Nadu</option>
+                        <option value="Punjab" selected>Punjab</option>
+                        <option value="Arunachal Pradesh" selected>Arunachal Pradesh</option>
+                        <option value="Assam" selected>Assam</option>
+                        <option value="Bihar" selected>Bihar</option>
+                        <option value="Goa" selected>Goa</option>
+                        <option value="Gujarat" selected>Gujarat</option>
+                        <option value="Manipur" selected>Manipur</option>
+                        <option value="Odisha" selected>Odisha</option>
+                    </datalist></td>
+                </tr>
+                <tr>
+                    <td><input type="save" name="save" value="Save"/></td>
+                    <td><input type="reset" name="reset" value="Reset"/></td>
+                </tr>
+
+            </table>
+
+        </form>
+     </div>
+    </body>
+</html>
