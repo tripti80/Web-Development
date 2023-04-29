@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Dialer HTML</title>
+    <script>
+
+        function myfunction(e){
+            x = e.clientX;
+            y = e.clientY;
+            coor ="Coordinates:("+x+" , "+y+")";
+            document.getElementById("demo").innerHTML = coor
+        }
+        function clearcoor(){
+            document.getElementById("demo").innerHTML = "";
+        }
+        function myfuc1(){
+            alert("you have pressed One!!")
+        }
+        function myfuc2(){
+            alert("you have pressed Two!!")
+        }
+        function myfuc3(){
+            alert("you have pressed Three!!")
+        }
+        function myfuc4(){
+            alert("you have pressed Four!!")
+        }
+        function myfuc5(){
+            alert("you have pressed Five!!")
+        }
+        function myfuc6(){
+            alert("you have pressed Six!!")
+        }
+        function myfuc7(){
+            alert("you have pressed Seven!!")
+        }
+        function myfuc8(){
+            alert("you have pressed Eight!!")
+        }
+        function myfuc9(){
+            alert("you have pressed Nine!!")
+        }
+        function myfuc0(){
+            alert("you have pressed Zero!!")
+        }
+        function myfucCall(){
+            alert("You have pressed *")
+        }
+        function myfuncCall(){
+            alert("You have pressed #")
+        }
+    </script>
+</head>
+
+<body style="margin:0px;" style="background-color: rgb(255, 30, 30);">
+    <img src="keypad.jpg" alt="keypad" usemap="#keypad" onmousemove="myfunction(event)" onmouseout="clearcoor()" width="25%" height="50%" style="margin: auto;">
+    <!-- <div id="" style="width :199px;height:99px;border:1px solid" onmousemove="myfunction(event)" onmouseout="clearcoor()"></div>
+        <p>Move mouse over the rectangle above, and get the Coordinates of your mouse pointer.</p> -->
+        <map name="keypad">
+            <area shape="circle" coords="80,87,28" alt="1" onclick="myfuc1()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="152,70,30" alt="2" onclick="myfuc2()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="228,70,28" alt="3" onclick="myfuc3()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+
+            <area shape="circle" coords="82, 150, 30" alt="4" onclick="myfuc4()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="158, 150, 30" alt="5" onclick="myfuc5()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="236, 152, 28" alt="6" onclick="myfuc6()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            
+            <area shape="circle" coords="84, 228, 28" alt="7" onclick="myfuc7()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="160, 230, 26" alt="8" onclick="myfuc8()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="236, 230, 28" alt="9" onclick="myfuc9()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            
+            <area shape="circle" coords="80, 310, 30" alt="*" onclick="myfucCall()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="156, 308, 32" alt="0" onclick="myfuc0()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+            <area shape="circle" coords="236, 304, 28" alt="#" onclick="myfuncCall()" onmousemove="myfunction(event)" onmouseout="clearcoor()">
+        </map>
+
+        <p id="demo"></p>
+</body>
+</html>
+
+<!-- 
+for 1-----80,87 are the centre coordinates and 108,87 are the boundary coordinate so radius is 28. coordinates are  80,87,28  
+for 2-----152,70 are the centre coordinates and 182,72 are the boundary coordinate so radius is 30. coordinates are 152,70,30
+for 3-----228,70 are the centre coordinates and 256,70 are the boundary coordinate so radius is 28. coordinates are 228,70,28 -->
