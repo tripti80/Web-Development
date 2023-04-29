@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form </title>
+        <style>
+            form{
+                color:black;
+                font-size: larger;
+            }
+            h1{
+                text-align: center;
+            }
+            td{
+                width: 2000px;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body bgcolor="white">
+        <form>
+            <form action="script URL" methods="post">
+                <table>
+                    <h1 style="text-decoration-color: red" >Entry Form </h1>
+                    <tr>
+                        <td>First Name: <input type="text" name="first_name" placeholder="Enter name..."></td>
+                    </tr>
+                    <br> 
+                    <tr>
+                        <td>
+                            Last name: <input type="text" name="last_name"/>
+                        </td>
+                    </tr>
+                    <br/>
+
+                    <tr>
+                        <td>
+                            Description : <br/>
+                            <textarea rows="5" cols="50" name="desciption">Enter description here...</textarea>
+                        </td>
+                    </tr>
+                    <br/>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="maths" value="on" checked> Maths
+                            <input type="checkbox" name="logic design" value="on" checked> logic design
+                            <input type="checkbox" name="ds" value="on" checked> ds
+                            <input type="checkbox" name="java" value="on" checked> java
+                            <input type="checkbox" name="physics" value="on" checked> Physics
+                        </td>
+                    </tr>
+                    <br/>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="subject" value="male"> Male
+                            <input type="radio" name="subject" value="female"> Female
+                        </td>
+                    </tr>
+                    <br/>
+
+                    <tr>
+                        <td>
+                            <select name="dropdown" multiple>
+                                <option value="Maths" selected>Maths</option>
+                                <option value="chemistry" selected>chemistry</option>
+                                <option value="biology" selected>biology</option>
+                                <option value="logic design" selected>logic design</option>
+                                <option value="ds" selected>ds</option>
+                                <option value="java" selected>java</option>
+                                <option value="python" selected>Python</option>
+                                <option value="Physics" selected>Physics</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <br/>
+
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit" value="Submit" />
+                            <input type="reset" name="reset" value="Reset" />
+                            <input type="button" name="ok" value="OK" />
+                            <!-- <input type="image" name="imagebutton" src="script URL " width="20" height="20" /> -->
+                        </td>
+                    </tr>
+                </table>
+        </form>
+    </body>
+</html>
