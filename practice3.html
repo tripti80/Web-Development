@@ -1,0 +1,44 @@
+<!-- Create an HTML form with input fields for name, email, and message, and 
+add JavaScript validation to ensure that all fields are filled out before the form 
+can be submitted. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<script type="text/javascript">
+		function validateForm() 
+        {
+			var name = document.forms["contactForm"]["name"].value;
+			var email = document.forms["contactForm"]["email"].value;
+			var message = document.forms["contactForm"]["message"].value;
+			if (name == "" || email == "" || message == "") 
+            {
+				alert("Please fill out all fields.");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="contactForm" onsubmit="return validateForm()" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+
+
+<!-- The validateForm() function is called when the form is submitted, and it checks if the name, email,
+and message fields are filled out. If any of the fields are empty, an alert is displayed asking the user
+to fill out all fields, and the function returns false to prevent the form from being submitted.
+If all fields are filled out, the function returns true and the form is submitted as usual. -->
