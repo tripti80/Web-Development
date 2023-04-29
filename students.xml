@@ -1,0 +1,52 @@
+<!-- Create a database of a student and validate with the help of DTD (Document TYpe Definition) using XMl. -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE student [
+
+<!ELEMENT student (name,branch,yoj,email)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT branch(#PCDATA)>
+<!ELEMENT yoj(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ENTITY writer " tripti">
+<!ENTITY copyrights "PM">
+<!ENTITY nbsp "&#xA0;">
+<!ATTLIST student name CDATA #REQUIRED>
+<!ATTLIST student branch CDATA #REQUIRED>
+<!ATTLIST student yoj CDATA #REQUIRED>
+<!ATTLIST student email CDATA #IMPLIED>
+
+]>
+
+<students>
+  <heading>Welcome to graphic era</heading>
+  <student>
+      <name>NAME : aruu </name>
+      <branch> BRANCH : CS</branch>
+      <yoj>DOJ : 2006</yoj>
+      <email>EMAIL : aruu78@gmail.com</email>
+     <footer>&writer;&nbsp;&copyrights;</footer>
+   </student>
+
+   <br />   
+
+   <student>
+      <name>NAME : Ishu </name>
+      <branch> BRANCH : CS</branch>
+      <yoj>DOJ : 2004</yoj>
+      <email>EMAIL : ishu11@gmail.com</email>
+     <footer>&writer;&nbsp;&copyrights;</footer>
+   </student>
+
+   <br/>
+
+   <student>
+      <name>NAME : Anu </name>
+      <branch> BRANCH : CS</branch>
+      <yoj>DOJ : 2005</yoj>
+      <email>EMAIL : anu23@gmail.com</email>
+     <footer>&writer;&nbsp;&copyrights;</footer>
+   </student>
+   
+</students>   
