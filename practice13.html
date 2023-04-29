@@ -1,0 +1,23 @@
+<!-- // WAJP to create a button that, when clicked displays an alert with random number generated between 1 and 10 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Random Number</title>
+</head>
+<body>
+	<button onclick="generateRandomNumber()">Generate Random Number</button>
+	<script>
+		function generateRandomNumber() 
+		{
+			var randomNumber = Math.floor(Math.random() * 10) + 1;
+			alert("Your random number is: " + randomNumber);
+		}
+	</script>
+</body>
+</html>
+
+
+<!-- // In the generateRandomNumber function, we use the Math.random function to generate a random number between
+// 0 and 1. We then multiply this by 10 to get a number between 0 and 10, and then add 1 to get a number 
+// between 1 and 10. We use the Math.floor function to round down to the nearest integer. -->
