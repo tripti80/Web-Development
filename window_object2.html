@@ -1,0 +1,24 @@
+<!-- for open and close window object method -->
+
+<body>
+	<div class="container" style="text-align: center;">
+		<h1 style="color: rgb(18, 154, 18);"> GeeksforGeeks</h1>
+		<h3> window open and close method</h3>
+		<button onclick="windowOpen()">Open GeeksforGeeks</button>
+		<button onclick="windowClose()">Close GeeksforGeeks</button>
+	</div>
+
+	<script>
+		var Window;
+		
+		function windowOpen() 
+        {
+			Window = window.open("https://www.geeksforgeeks.org/", "_blank", "width=400, height=300, top=230, left=540");
+		}
+		
+		function windowClose() 
+        {
+			Window.close();
+		}
+	</script>
+</body>
