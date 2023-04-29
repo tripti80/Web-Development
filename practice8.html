@@ -1,0 +1,91 @@
+<!-- Create an HTML table with data about books and use CSS to style the table 
+with alternating row colors and a fixed header row -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book List</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1em;
+      }
+      
+      th {
+        background-color: #ccc;
+        color: #333;
+        font-weight: bold;
+        text-align: left;
+        padding: 0.5em;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      
+      td {
+        border: 1px solid #ccc;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Book List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>Classic</td>
+          <td>1925</td>
+        </tr>
+        <tr>
+          <td>To Kill a Mockingbird</td>
+          <td>Harper Lee</td>
+          <td>Fiction</td>
+          <td>1960</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>George Orwell</td>
+          <td>Dystopian</td>
+          <td>1949</td>
+        </tr>
+        <tr>
+          <td>Pride and Prejudice</td>
+          <td>Jane Austen</td>
+          <td>Classic</td>
+          <td>1813</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+
+
+
+<!-- In the CSS, table has border-collapse set to collapse to remove the borders between cells, width set to
+100% to fill the width of its container, and margin-bottom set to 1em to create some space between the table
+and any content below it.
+
+th has a gray background-color, black color, font-weight set to bold, text-align set to left, and
+padding set to 0.5em to create a fixed header row that stands out from the rest of the table.
+
+tr:nth-child(even) selects every other row starting with the second row and gives it a light gray 
+background-color to create alternating row colors.
+
+td has a border set to 1px solid #ccc to add borders around each cell and padding set to 0.5em to add some
+space between the cell content and the cell borders.
+
+This should give you a basic idea of how to style a table using CSS. You can adjust the colors, fonts, and
+other styles to suit your needs. -->
