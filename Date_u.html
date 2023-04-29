@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+                                                //4 methods for printing date
+
+            var d=new Date(2023,03)
+            // document.write(d)
+            var d1=new Date(2023,02,04)
+            //document.write(d1)
+            var d2=Date.parse("2023-03-17")
+            //document.write(d2)
+            var d3=new Date(d2)
+            //document.write(d3)
+            // document.write(d3.getDate())
+            // document.write(d3.getFullYear())
+            // document.write(d3.getTime())
+            //document.write(d3.getMonth())
+
+                                                // for print todays date and time(along with am pm)
+
+            var date = new Date()
+            var year = date.getFullYear()
+            var month = date.getMonth() + 1
+            var day = date.getDate()
+            //document.write(month + "/" + day + "/" + year)
+            var hour=date.getHours()
+            var minute=date.getMinutes()
+            var second=date.getSeconds()
+            var prepand = date.getHours()>12?"pm":"am"
+            //document.write(hour+":"+minute+":"+second+":"+prepand)
+
+                                                //wap to check whether it was sunday on 1 jan since 2014 till 2023
+
+            for(yr=2014;yr<=2023;yr++)
+            {
+                var d=new Date(yr,0,1)
+                if(d.getDay()==0)
+                {
+                    //document.write(d.getFullYear())
+                }
+            }
+
+                                                //check leap year or not
+            /* if(year%4==0)
+            {
+                if(year%100==0)
+                {
+                    if(year%400==0)
+                    {
+                        document.write("leap year")
+                    }
+                    else
+                    {
+                        document.write("not a leap year")
+                    }
+                }
+                else
+                {
+                    document.write("leap year")
+                }
+            }
+            else
+            {
+                document.write("not a leap year")
+            } */
+
+                                                //find day on your birth date
+            var bday=new Date("2002-02-25")
+            var day=["sun","mon","tues","wed","thurs","fri","sat","sun"]
+            //document.write("Birth Day is"+day[bday.getDay()])
+
+                                                //display your age
+            var age=((d3.getTime()-bday.getTime())/86400000)/365
+            //document.write("ags is"+age)
+                                                //how many days are left for christmas 
+            var xmas=new Date(d3.getFullYear(),11,25)
+            if(d3.getDate()>25 && d3.getMonth()==11)
+            {
+                xmas.setFullYear(xmas.getFullYear()+1)
+            }
+            document.write(Math.ceil((xmas.getTime()-d3.getTime())/84600000))
+        </script>
+    </head>
+</html>
